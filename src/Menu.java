@@ -27,7 +27,9 @@ public class Menu extends JFrame implements ActionListener {
       mineButton = new JButton("Mine");
       mineButton.setBounds(100,100,500,500);
       mineButton.addActionListener(this);
+        
       ImageIcon icon = new ImageIcon("cat.png");
+        
       mineButton.setIcon(icon);
 
 
@@ -45,8 +47,10 @@ public class Menu extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource()==mineButton) {
+        if(e.getSource()==mineButton)
+        {
             MineClick.money += 1;
+            
             System.out.println(MineClick.money);
         }
     }
